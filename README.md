@@ -15,10 +15,21 @@ POST /users
 Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
 Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
 
-
 ### Login
 
 POST /login <br/>
 POST /signin
 
 Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+
+## Jobs
+
+GET /jobs <br> Retorna todos os jobs cadastrados, não precisa estar logado.
+
+POST /jobs <br> Cadastra um novo job, precisa estar logado.
+
+## Companies
+
+GET /companies <br> Retorna todas as empresas cadastradas, precisa estar logado.
+
+POST /companies <br> Cadastra uma nova empresa, precisa estar logado.
